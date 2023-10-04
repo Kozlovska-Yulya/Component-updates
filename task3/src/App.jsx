@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Expend from './Expend';
+import Expand from './Expand';
 
 class App extends Component {
   state = {
@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Expend
+        <Expand
           isShow={this.state.isShow}
           onClose={this.showContent}
           title="Some text"
@@ -30,7 +30,7 @@ class App extends Component {
             Hooks are a new addition in React 16.8. They let you use state and
             other React features without writing a class.
           </p>
-        </Expend>
+        </Expand>
       </div>
     );
   }

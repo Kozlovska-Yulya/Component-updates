@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Expend = ({ children, title, onClose }) => {
+const Expand = ({ children, title, onClose }) => {
   return (
     <div className="expand border">
       <div className="expand__header">
@@ -15,4 +15,4 @@ const Expend = ({ children, title, onClose }) => {
   );
 };
 
-export default Expend;
+export default Expand;
