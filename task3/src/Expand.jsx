@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Expand = ({ isShow, children, title, onClose }) => {
-  if (!isShow) {
-    return null;
-  }
+const Expand = ({ children, title, onClose }) => {
   return (
     <div className="expand border">
       <div className="expand__header">
@@ -16,6 +13,13 @@ const Expand = ({ isShow, children, title, onClose }) => {
       <div className="expand__content">{children}</div>
     </div>
   );
+};
+
+Expand.propTypes = {
+  isShow: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Expand;

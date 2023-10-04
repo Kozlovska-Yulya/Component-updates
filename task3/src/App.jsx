@@ -23,7 +23,7 @@ class App extends Component {
       <div className="app">
         <Expand
           isShow={this.state.isShow}
-          onClose={this.showContent}
+          onClose={this.hideContent}
           title="Some text"
         >
           <p>
